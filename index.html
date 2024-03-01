@@ -16,19 +16,33 @@
             width="200"
             src="https://cdn.britannica.com/73/244173-050-13235B84/Royal-Flush-poker-card-game-gambling.jpg"
              >
-            <h2 id="about">Generate Your Hand</h2>
+            <h2 id="about">Generate Your Hand <span id="your-hand"></span></h2>
+
+            <div id="your-hand">
+                <img id = "yhidden" src="./cards/BACK.png">
+                <img id = "yhidden2" src="./cards/BACK.png">
+            </div>
+               
             <br>
             <button id="hand">Hand</button>
             <div id="your-cards"></div>
             <br>
             <br>
-            <h2 id="about">Community Cards</h2>
+            <h2 id="about">Community Cards <span id="house-hand"></span></h2>
+            <br>
+            <div id ="house-hand">
+                <img id = "hhidden" src="./cards/BACK.png">
+                <img id = "hhidden2" src="./cards/BACK.png">
+                <img id = "hhidden3" src="./cards/BACK.png">
+                <img id = "hhidden4" src="./cards/BACK.png">
+                <img id = "hhidden5" src="./cards/BACK.png">
+            </div>
             <br>
             <button id="community">Community</button>
             <h2 id="house-cards"></h2>
             <br>
             <br>
-            <h3 id="points">Your Points:</h3>
+            <h3 id="points">Your Points: <span id='your-points'></span></h3>
             <br>
-            <h3 id="points2">House Points:</h3>
+            <h3 id="points2">House Points: <span id='house-points'></span></h3>
 </html>
