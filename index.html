@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poker</title>
     <link rel="stylesheet" href="style.css">
-    <script src ="poker.py"></script>
+    <script src="poker.js"></script>
 </head>
 
 <body>
     <h1>All in Poker Simulator</h1>
-    <u1> 
+    <u1>
         <ll>
-            <img 
-            width="200"
-            src="https://cdn.britannica.com/73/244173-050-13235B84/Royal-Flush-poker-card-game-gambling.jpg"
-             >
+            <img width="200"
+                src="https://cdn.britannica.com/73/244173-050-13235B84/Royal-Flush-poker-card-game-gambling.jpg">
             <h2 id="about">Generate Your Hand <span id="your-hand"></span></h2>
 
             <div id="your-hand">
-                <img id = "yhidden" src="./cards/BACK.png">
-                <img id = "yhidden2" src="./cards/BACK.png">
+                <img id="yhidden" src="./cards/BACK.png">
+                <img id="yhidden2" src="./cards/BACK.png">
             </div>
-               
+
             <br>
-            <button id="hand">Hand</button>
             <div id="your-cards"></div>
             <br>
             <br>
             <h2 id="about">Community Cards <span id="house-hand"></span></h2>
             <br>
-            <div id ="house-hand">
-                <img id = "hhidden" src="./cards/BACK.png">
-                <img id = "hhidden2" src="./cards/BACK.png">
-                <img id = "hhidden3" src="./cards/BACK.png">
-                <img id = "hhidden4" src="./cards/BACK.png">
-                <img id = "hhidden5" src="./cards/BACK.png">
+            <div id="house-hand">
+                <img id="hhidden" src="./cards/BACK.png">
+                <img id="hhidden2" src="./cards/BACK.png">
+                <img id="hhidden3" src="./cards/BACK.png">
+                <img id="hhidden4" src="./cards/BACK.png">
+                <img id="hhidden5" src="./cards/BACK.png">
             </div>
-            <br>
-            <button id="community">Community</button>
             <h2 id="house-cards"></h2>
             <br>
+            <button id="Generate">Generate Cards</button>
             <br>
             <h3 id="points">Your Points: <span id='your-points'></span></h3>
             <br>
-            <h3 id="points2">House Points: <span id='house-points'></span></h3>
+            <h1>Point System</h1>
+            <b1>Pair = 1</b1>
+            <b1>Triple = 5</b1>
+            <b1>Quad = 15</b1>
+            <b1>Flush = 10</b1>
+            <b1>Straight = 10</b1>
+            <b1>Full House = 12</b1>
 </html>
