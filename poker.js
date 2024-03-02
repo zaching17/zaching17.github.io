@@ -1,6 +1,6 @@
 var yourPoints = 0;
 var allcards;
-var ycard1, ycard2, hcard1, hcard2, hcard3, hcard4, hcard5; // card1 and card2 are the player's cards, 3-7 are house cards
+var ycard1, ycard2, hcard1, hcard2, hcard3, hcard4, hcard5; // ycard1 and ycard2 are the player's cards, hcard1-5 are house cards
 var deck;
 var isStraight;
 var isFlush;
