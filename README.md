@@ -5,5 +5,5 @@ Download files
 Launch HTML file
 Click Generate Cards button
 or
-Go to zachin17.github.io
+Go to zaching17.github.io
 Click Generate Cards button
