@@ -9,6 +9,11 @@ window.onload = function () {
   allcards = allCards();
   assignCards();
   displayInitialCards();
+  getRandomInt();
+  dealCards();
+  generateCards();
+  calculatePoints();
+  rankHand();
 };
 
 function allCards() {
