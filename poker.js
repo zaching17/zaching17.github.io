@@ -57,12 +57,9 @@ function assignCards() {
 
 function displayInitialCards() {
   // initial card display
-  document.getElementById(
-    "yhidden"
-  ).src = `./cards/${ycard1[0]}-${ycard1[1]}.png`;
-  document.getElementById(
-    "yhidden2"
-  ).src = `./cards/${ycard2[0]}-${ycard2[1]}.png`;
+  document.getElementById("yhidden").src = `./cards/${ycard1[0]}-${ycard1[1]}.png`;
+
+  document.getElementById("yhidden2").src = `./cards/${ycard2[0]}-${ycard2[1]}.png`;
 
   // initial card display
   document.getElementById("hhidden").src = `./cards/BACK.png`;
@@ -95,22 +92,15 @@ function generateCommunityCards() {
   hcard5 = deck[6];
 
   // updates card pngs
-  document.getElementById(
-    "hhidden"
-  ).src = `./cards/${hcard1[0]}-${hcard1[1]}.png`;
-  document.getElementById(
-    "hhidden2"
-  ).src = `./cards/${hcard2[0]}-${hcard2[1]}.png`;
-  document.getElementById(
-    "hhidden3"
-  ).src = `./cards/${hcard3[0]}-${hcard3[1]}.png`;
-  document.getElementById(
-    "hhidden4"
-  ).src = `./cards/${hcard4[0]}-${hcard4[1]}.png`;
-  document.getElementById(
-    "hhidden5"
-  ).src = `./cards/${hcard5[0]}-${hcard5[1]}.png`;
+  document.getElementById("hhidden").src = `./cards/${hcard1[0]}-${hcard1[1]}.png`;
 
+  document.getElementById("hhidden2").src = `./cards/${hcard2[0]}-${hcard2[1]}.png`;
+
+  document.getElementById("hhidden3").src = `./cards/${hcard3[0]}-${hcard3[1]}.png`;
+
+  document.getElementById("hhidden4").src = `./cards/${hcard4[0]}-${hcard4[1]}.png`;
+
+  document.getElementById("hhidden5").src = `./cards/${hcard5[0]}-${hcard5[1]}.png`;
 
   calculatePoints();
 }
@@ -174,12 +164,7 @@ function rankHand(hand) {
 function isStraight(hand) {
   var values = hand.map((card) => card[0]).sort((a, b) => a - b);
   for (var i = 0; i < values.length - 4; i++) {
-    if (
-      values[i] === values[i + 1] - 1 &&
-      values[i] === values[i + 2] - 2 &&
-      values[i] === values[i + 3] - 3 &&
-      values[i] === values[i + 4] - 4
-    ) {
+    if (values[i] === values[i + 1] - 1 && values[i] === values[i + 2] - 2 && values[i] === values[i + 3] - 3 && values[i] === values[i + 4] - 4) {
       return true;
     }
   }
