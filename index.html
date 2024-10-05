@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="style" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voter Engagement Platform</title>
+    <title>Voting Information</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <style>
-        h1 {
-            color: lightgreen;
-            margin-left: 40px;
-        }
-    </style>
-    <link rel="stylesheet" href="style.css">
-    <div id="title">
-        <h1>Welcome to the Voter Engagement Platform!</h1>
-        <h2>Absentee Vote Information</h2>
-        <h3>Voter Registration Information</h3>
+
+    <h1>Voting Information Portal</h1>
+
+    <!-- Tab Navigation -->
+    <div class="tabs">
+        <button class="tablink" onclick="openTab(event, 'voterRegistration')">Voter Registration</button>
+        <button class="tablink" onclick="openTab(event, 'absenteeBallot')">Absentee Ballot Information</button>
     </div>
+
+    <!-- Tab Content 1: Voter Registration -->
+    <div id="voterRegistration" class="tabcontent">
+        <h2>Voter Registration</h2>
+        <p>Here is all the information about how to register to vote in your area.</p>
+        <!-- Add relevant voter registration information here -->
+    </div>
+
+    <!-- Tab Content 2: Absentee Ballot Information -->
+    <div id="absenteeBallot" class="tabcontent">
+        <h2>Absentee Ballot Information</h2>
+        <p>Here is all the information about how to apply for an absentee ballot.</p>
+        <!-- Add relevant absentee ballot information here -->
+    </div>
+
+    <script src="scripts.js"></script>
+
 </body>
 </html>
