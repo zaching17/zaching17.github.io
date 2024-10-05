@@ -1,9 +1,13 @@
 body {
-    background-color: aliceblue;
+    background-color: lightblue;
 }
 
 h1 {
-    color:maroon;
-    margin-left: 60px;
+    color: navy;
+    font-family: Arial, sans-serif;
 }
 
+p {
+    font-size: 16px;
+    color: darkgray;
+}
